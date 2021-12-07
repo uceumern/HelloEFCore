@@ -1,0 +1,39 @@
+﻿<Window x:Class="HalloWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HalloWPF"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="500">
+    <Window.Style>
+        <Style TargetType="Window" BasedOn="{StaticResource {x:Type Window}}" />
+    </Window.Style>
+    <StackPanel>
+        <Button Content="Button" />
+        <TextBlock Text="TextBlock"/>
+        <Label>LolPatrol</Label>
+        <Button>
+            <Button.Content>
+                <StackPanel>
+                <Polygon>
+                    <Polygon.Points>
+                        <Point X="50"
+                               Y="0" />
+                        <Point X="100"
+                               Y="100" />
+                        <Point X="0"
+                               Y="100" />
+                    </Polygon.Points>
+                    <Polygon.Fill>
+                        <SolidColorBrush Color="red" />
+                    </Polygon.Fill>
+                </Polygon>
+                    <TextBlock HorizontalAlignment="Center" Text="Foo" />
+                </StackPanel>
+            </Button.Content>
+        </Button>
+    </StackPanel>
+</Window>
