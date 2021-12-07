@@ -18,9 +18,9 @@
         </Menu>
         <StatusBar DockPanel.Dock="Bottom"
                    Height="22"
-                   Background="Azure" />
+                   Background="Bisque" />
         <WrapPanel DockPanel.Dock="Top">
-            <Button>Load All</Button>
+            <Button Click="LoadAll">Load All</Button>
         </WrapPanel>
         <DataGrid Name="dataGrid" />
     </DockPanel>
