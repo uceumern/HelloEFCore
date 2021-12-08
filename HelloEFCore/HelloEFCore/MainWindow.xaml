@@ -20,8 +20,21 @@
                    Height="22"
                    Background="Bisque" />
         <WrapPanel DockPanel.Dock="Top">
-            <Button Click="LoadAll">Load All</Button>
+            <Button Margin="0 0 10 0" Click="LoadEmployees">Load Employees</Button>
+            <Button Margin="0 0 10 0" Click="LoadCustomers">Load Customers</Button>
+            <Button Margin="0 0 10 0" Click="CreateDemoData">Create Demo Data</Button>
         </WrapPanel>
-        <DataGrid Name="dataGrid" />
+        <DataGrid Name="dataGrid">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Departments">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ListBox ItemsSource="{Binding Departments}"
+                                     DisplayMemberPath="Description"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
     </DockPanel>
 </Window>

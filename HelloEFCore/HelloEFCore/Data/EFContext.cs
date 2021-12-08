@@ -10,7 +10,7 @@ namespace HelloEFCore.Data
 {
     internal class EFContext : DbContext
     {
-        //public DbSet<Person> Persons { get; set; }
+        public DbSet<Person> Persons { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Department> Departments { get; set; }
@@ -18,6 +18,14 @@ namespace HelloEFCore.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=.;Database=HelloEF;Trusted_Connection=True;trustservercertificate=true");
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Department>().ToTable("Departments");
+            modelBuilder.Entity<Customer>().ToTable("Customers");
+            modelBuilder.Entity<Employee>().ToTable("Employees");
+            modelBuilder.Entity<Person>().ToTable("Persons");
         }
     }
 }
