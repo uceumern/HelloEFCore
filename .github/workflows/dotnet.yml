@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore .\Calculator\Calculator.sln
+      run: dotnet restore ./Calculator/Calculator.sln
     - name: Build
-      run: dotnet build --no-restore .\Calculator\Calculator.sln
+      run: dotnet build --no-restore ./Calculator/Calculator.sln
     - name: Test
-      run: dotnet test --no-build --verbosity normal .\Calculator\Calculator.sln
+      run: dotnet test --no-build --verbosity normal ./Calculator/Calculator.sln
