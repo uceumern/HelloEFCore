@@ -20,13 +20,15 @@ namespace HelloEFCore
         {
             InitializeComponent();
             _context.Database.EnsureCreated();
+            _ = new HelloDelegate();
         }
 
         private void LoadEmployees(object sender, RoutedEventArgs e)
         {
             var query = from emp in _context.Employees.Include(x => x.Departments)
                         orderby emp.BirthDate descending
-                        select emp;
+                        select new { MitarbeiterName = emp.Name, Geburtstag = new DateOnly(emp.BirthDate.Year, emp.BirthDate.Month, emp.BirthDate.Day) };
+                        //select emp;
             dataGrid.ItemsSource = query.ToList();
 
             //dataGrid.ItemsSource = _context.Employees.Include(x => x.Departments).ToList();
