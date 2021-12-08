@@ -24,7 +24,12 @@ namespace HelloEFCore
 
         private void LoadEmployees(object sender, RoutedEventArgs e)
         {
-            dataGrid.ItemsSource = _context.Employees.Include(x => x.Departments).ToList();
+            var query = from emp in _context.Employees.Include(x => x.Departments)
+                        orderby emp.BirthDate descending
+                        select emp;
+            dataGrid.ItemsSource = query.ToList();
+
+            //dataGrid.ItemsSource = _context.Employees.Include(x => x.Departments).ToList();
         }
 
         private void LoadCustomers(object sender, RoutedEventArgs e)
@@ -57,6 +62,13 @@ namespace HelloEFCore
             }
 
             _context.SaveChanges();
+        }
+
+        private void FirstOfMay(object sender, RoutedEventArgs e)
+        {
+            var employee = _context.Employees.FirstOrDefault(x => x.BirthDate.Month == 5);
+
+            textBlockStatusBar.Text = employee.Name;
         }
     }
 }

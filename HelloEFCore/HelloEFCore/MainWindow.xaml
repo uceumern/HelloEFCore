@@ -18,11 +18,16 @@
         </Menu>
         <StatusBar DockPanel.Dock="Bottom"
                    Height="22"
-                   Background="Bisque" />
+                   Background="Bisque">
+            <StatusBarItem>
+                <TextBlock Name="textBlockStatusBar" />
+            </StatusBarItem>
+        </StatusBar>
         <WrapPanel DockPanel.Dock="Top">
             <Button Margin="0 0 10 0" Click="LoadEmployees">Load Employees</Button>
             <Button Margin="0 0 10 0" Click="LoadCustomers">Load Customers</Button>
             <Button Margin="0 0 10 0" Click="CreateDemoData">Create Demo Data</Button>
+            <Button Margin="0 0 10 0" Click="FirstOfMay">First of May</Button>
         </WrapPanel>
         <DataGrid Name="dataGrid">
             <DataGrid.Columns>
