@@ -5,6 +5,7 @@ on:
     branches: [ master ]
     paths:
       - 'Calculator/**'
+      - '.github/workflows/calculator.yml'
   pull_request:
     branches: [ master ]
 

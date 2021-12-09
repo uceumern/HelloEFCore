@@ -5,6 +5,7 @@ on:
     branches: [ master ]
     paths:
       - 'uuf.PersonManagement/**'
+      - '.github/workflows/PersonManagement.yml'
   pull_request:
     branches: [ master ]
 
