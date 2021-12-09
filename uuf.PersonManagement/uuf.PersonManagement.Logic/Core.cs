@@ -16,6 +16,8 @@ namespace uuf.PersonManagement.Logic
 
         //}
 
+        // FOO
+
         public IEnumerable<Customer> GetCustomersThatHaveBirthdayThatMonth(int month)
         {
             return Repository.GetAll<Customer>().Where(x => x.BirthDate.Month == month);
