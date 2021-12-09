@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.Model", "uuf.PersonManagement.Model\uuf.PersonManagement.Model.csproj", "{B377F9E6-5A42-49BB-8775-A0FB6C652E2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.Data.EfCore", "uuf.PersonManagement.Data.EfCore\uuf.PersonManagement.Data.EfCore.csproj", "{3BDDA379-4B28-4E11-B0F0-384FCF62E49D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B377F9E6-5A42-49BB-8775-A0FB6C652E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B377F9E6-5A42-49BB-8775-A0FB6C652E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B377F9E6-5A42-49BB-8775-A0FB6C652E2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BDDA379-4B28-4E11-B0F0-384FCF62E49D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BDDA379-4B28-4E11-B0F0-384FCF62E49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BDDA379-4B28-4E11-B0F0-384FCF62E49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BDDA379-4B28-4E11-B0F0-384FCF62E49D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
