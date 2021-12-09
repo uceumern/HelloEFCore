@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  build Calculator:
     defaults:
       run:
         working-directory: Calculator
