@@ -6,7 +6,7 @@ namespace uuf.PersonManagement.Logic
 {
     public class Core
     {
-        private IRepository _repository = new EfRepository();
+        public IRepository Repository { get; } = new EfRepository();
 
         //private IRepository _repository;
 
@@ -18,7 +18,7 @@ namespace uuf.PersonManagement.Logic
 
         public IEnumerable<Customer> GetCustomersThatHaveBirthdayThatMonth(int month)
         {
-            return _repository.GetAll<Customer>().Where(x => x.BirthDate.Month == month);
+            return Repository.GetAll<Customer>().Where(x => x.BirthDate.Month == month);
         }
 
     }
