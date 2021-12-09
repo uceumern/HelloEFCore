@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.Data.E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.Data.EfCore.Tests", "uuf.PersonManagement.Data.EfCore.Tests\uuf.PersonManagement.Data.EfCore.Tests.csproj", "{52D7C2C0-8533-4A0E-A402-81FDE8E10E68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.Logic", "uuf.PersonManagement.Logic\uuf.PersonManagement.Logic.csproj", "{E80A1DDF-0265-470F-8B76-CEBAE87D211F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.DevConsole", "uuf.PersonManagement.DevConsole\uuf.PersonManagement.DevConsole.csproj", "{CC2E95C2-783C-4BA5-A22E-B08BD62FD6FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{52D7C2C0-8533-4A0E-A402-81FDE8E10E68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52D7C2C0-8533-4A0E-A402-81FDE8E10E68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52D7C2C0-8533-4A0E-A402-81FDE8E10E68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E80A1DDF-0265-470F-8B76-CEBAE87D211F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E80A1DDF-0265-470F-8B76-CEBAE87D211F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E80A1DDF-0265-470F-8B76-CEBAE87D211F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E80A1DDF-0265-470F-8B76-CEBAE87D211F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC2E95C2-783C-4BA5-A22E-B08BD62FD6FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC2E95C2-783C-4BA5-A22E-B08BD62FD6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC2E95C2-783C-4BA5-A22E-B08BD62FD6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC2E95C2-783C-4BA5-A22E-B08BD62FD6FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

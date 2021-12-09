@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\uuf.PersonManagement.Logic\uuf.PersonManagement.Logic.csproj" />
+    <ProjectReference Include="..\uuf.PersonManagement.Model\uuf.PersonManagement.Model.csproj" />
+  </ItemGroup>
+
+</Project>
