@@ -12,8 +12,8 @@
         <DockPanel>
             <DockPanel DockPanel.Dock="Top">
                 <Label DockPanel.Dock="Left">Title</Label>
-                <Button Click="Search" DockPanel.Dock="Right">Search</Button>
-                <TextBox Name="searchTb" />
+                <Button Click="SearchAsync" DockPanel.Dock="Right">Search</Button>
+                <TextBox Name="searchTb" Text="Bier" />
             </DockPanel>
             <DataGrid Name="myGrid" />
         </DockPanel>
