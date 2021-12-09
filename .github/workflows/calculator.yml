@@ -1,17 +1,15 @@
-name: .NET
+name: Calculator
 
 on:
   push:
     branches: [ master ]
+    paths:
+      - 'Calculator/**'
   pull_request:
     branches: [ master ]
 
 jobs:
   build:
-    defaults:
-      run:
-        working-directory: Calculator
-
     runs-on: ubuntu-latest
 
     steps:
