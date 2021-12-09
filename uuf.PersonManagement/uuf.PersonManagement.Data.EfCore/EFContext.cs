@@ -17,7 +17,6 @@ namespace HelloEFCore.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Department>().ToTable("Departments");
             modelBuilder.Entity<Customer>().ToTable("Customers");
             modelBuilder.Entity<Employee>().ToTable("Employees");
             modelBuilder.Entity<Person>().ToTable("Persons");
