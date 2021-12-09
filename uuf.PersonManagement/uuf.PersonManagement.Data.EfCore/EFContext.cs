@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using uuf.PersonManagement.Model;
 
-namespace HelloEFCore.Data
+namespace uuf.PersonManagement.Data.EfCore
 {
-    internal class EFContext : DbContext
+    public class EFContext : DbContext
     {
         public DbSet<Person> Persons { get; set; }
         public DbSet<Customer> Customers { get; set; }
