@@ -10,6 +10,9 @@ on:
 
 jobs:
   build:
+    defaults:
+          run:
+            working-directory: uuf.PersonManagement
     runs-on: ubuntu-latest
 
     steps:

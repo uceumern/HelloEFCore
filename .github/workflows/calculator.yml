@@ -10,8 +10,10 @@ on:
 
 jobs:
   build:
+    defaults:
+          run:
+            working-directory: Calculator
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET
