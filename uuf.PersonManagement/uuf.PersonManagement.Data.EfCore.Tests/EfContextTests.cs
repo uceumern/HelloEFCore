@@ -51,7 +51,6 @@ namespace uuf.PersonManagement.Data.EfCore.Tests
                 context.Customers.Remove(customer);
                 context.SaveChanges();
                 Assert.False(context.Customers.Any(x => x.Id == customer.Id));
-
             }
         }
 

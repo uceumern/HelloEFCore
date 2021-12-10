@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\uuf.PersonManagement.Data.EfCore\uuf.PersonManagement.Data.EfCore.csproj" />
     <ProjectReference Include="..\uuf.PersonManagement.Logic\uuf.PersonManagement.Logic.csproj" />
     <ProjectReference Include="..\uuf.PersonManagement.Model\uuf.PersonManagement.Model.csproj" />
   </ItemGroup>
