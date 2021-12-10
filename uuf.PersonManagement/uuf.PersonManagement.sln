@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.Model", "uuf.PersonManagement.Model\uuf.PersonManagement.Model.csproj", "{B377F9E6-5A42-49BB-8775-A0FB6C652E2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uuf.PersonManagement.Model", "uuf.PersonManagement.Model\uuf.PersonManagement.Model.csproj", "{B377F9E6-5A42-49BB-8775-A0FB6C652E2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.Data.EfCore", "uuf.PersonManagement.Data.EfCore\uuf.PersonManagement.Data.EfCore.csproj", "{3BDDA379-4B28-4E11-B0F0-384FCF62E49D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uuf.PersonManagement.Data.EfCore", "uuf.PersonManagement.Data.EfCore\uuf.PersonManagement.Data.EfCore.csproj", "{3BDDA379-4B28-4E11-B0F0-384FCF62E49D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.Data.EfCore.Tests", "uuf.PersonManagement.Data.EfCore.Tests\uuf.PersonManagement.Data.EfCore.Tests.csproj", "{52D7C2C0-8533-4A0E-A402-81FDE8E10E68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uuf.PersonManagement.Data.EfCore.Tests", "uuf.PersonManagement.Data.EfCore.Tests\uuf.PersonManagement.Data.EfCore.Tests.csproj", "{52D7C2C0-8533-4A0E-A402-81FDE8E10E68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.Logic", "uuf.PersonManagement.Logic\uuf.PersonManagement.Logic.csproj", "{E80A1DDF-0265-470F-8B76-CEBAE87D211F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uuf.PersonManagement.Logic", "uuf.PersonManagement.Logic\uuf.PersonManagement.Logic.csproj", "{E80A1DDF-0265-470F-8B76-CEBAE87D211F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.DevConsole", "uuf.PersonManagement.DevConsole\uuf.PersonManagement.DevConsole.csproj", "{CC2E95C2-783C-4BA5-A22E-B08BD62FD6FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uuf.PersonManagement.DevConsole", "uuf.PersonManagement.DevConsole\uuf.PersonManagement.DevConsole.csproj", "{CC2E95C2-783C-4BA5-A22E-B08BD62FD6FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.Logic.Tests", "uuf.PersonManagement.Logic.Tests\uuf.PersonManagement.Logic.Tests.csproj", "{AACE01DD-3AA3-4FFF-B79C-0A2A083E5A29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uuf.PersonManagement.Logic.Tests", "uuf.PersonManagement.Logic.Tests\uuf.PersonManagement.Logic.Tests.csproj", "{AACE01DD-3AA3-4FFF-B79C-0A2A083E5A29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.Ui.Web.MVC", "uuf.PersonManagement.Ui.Web.MVC\uuf.PersonManagement.Ui.Web.MVC.csproj", "{EA00336D-64FC-4CF2-A2B5-6663376B062D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uuf.PersonManagement.Ui.Web.MVC", "uuf.PersonManagement.Ui.Web.MVC\uuf.PersonManagement.Ui.Web.MVC.csproj", "{EA00336D-64FC-4CF2-A2B5-6663376B062D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.API.REST", "uuf.PersonManagement.API.REST\uuf.PersonManagement.API.REST.csproj", "{E63803E2-5BF4-441F-9518-493CF66BF33C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{EA00336D-64FC-4CF2-A2B5-6663376B062D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA00336D-64FC-4CF2-A2B5-6663376B062D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA00336D-64FC-4CF2-A2B5-6663376B062D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E63803E2-5BF4-441F-9518-493CF66BF33C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E63803E2-5BF4-441F-9518-493CF66BF33C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E63803E2-5BF4-441F-9518-493CF66BF33C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E63803E2-5BF4-441F-9518-493CF66BF33C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
