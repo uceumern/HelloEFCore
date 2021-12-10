@@ -21,7 +21,7 @@ namespace uuf.PersonManagement.Logic
 
         public Employee GetEmployeeWithMostCustomers()
         {
-            return Repository.GetAll<Employee>().OrderBy(x => x.Customers.Count()).FirstOrDefault();
+            return Repository.GetAll<Employee>().OrderByDescending(x => x.Customers.Count).FirstOrDefault();
         }
     }
 }

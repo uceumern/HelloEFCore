@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.Logic"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.DevConsole", "uuf.PersonManagement.DevConsole\uuf.PersonManagement.DevConsole.csproj", "{CC2E95C2-783C-4BA5-A22E-B08BD62FD6FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.Logic.Tests", "uuf.PersonManagement.Logic.Tests\uuf.PersonManagement.Logic.Tests.csproj", "{AACE01DD-3AA3-4FFF-B79C-0A2A083E5A29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CC2E95C2-783C-4BA5-A22E-B08BD62FD6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC2E95C2-783C-4BA5-A22E-B08BD62FD6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC2E95C2-783C-4BA5-A22E-B08BD62FD6FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AACE01DD-3AA3-4FFF-B79C-0A2A083E5A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AACE01DD-3AA3-4FFF-B79C-0A2A083E5A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AACE01DD-3AA3-4FFF-B79C-0A2A083E5A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AACE01DD-3AA3-4FFF-B79C-0A2A083E5A29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

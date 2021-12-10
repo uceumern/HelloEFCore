@@ -5,7 +5,7 @@ namespace uuf.PersonManagement.Data.EfCore
 {
     public class EfRepository : IRepository
     {
-        private readonly EFContext _context = new EFContext();
+        private readonly EFContext _context = new();
 
         public void Add<T>(T entity) where T : Entity
         {
