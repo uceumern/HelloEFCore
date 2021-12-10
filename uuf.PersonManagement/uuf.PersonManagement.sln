@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.API.RE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.API.ConsoleClient", "uuf.PersonManagement.API.ConsoleClient\uuf.PersonManagement.API.ConsoleClient.csproj", "{635A9A62-5583-4B97-9456-03F071C5A4FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uuf.PersonManagement.UI.Web.Blazor", "uuf.PersonManagement.UI.Web.Blazor\uuf.PersonManagement.UI.Web.Blazor.csproj", "{4385766F-42F4-4143-9E09-287757F002D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{635A9A62-5583-4B97-9456-03F071C5A4FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{635A9A62-5583-4B97-9456-03F071C5A4FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{635A9A62-5583-4B97-9456-03F071C5A4FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4385766F-42F4-4143-9E09-287757F002D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4385766F-42F4-4143-9E09-287757F002D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4385766F-42F4-4143-9E09-287757F002D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4385766F-42F4-4143-9E09-287757F002D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
