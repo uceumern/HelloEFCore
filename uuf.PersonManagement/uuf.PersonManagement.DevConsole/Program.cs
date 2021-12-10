@@ -23,6 +23,8 @@ var core = new Core(repository);
 
 // dependency injection framework, e.g. AutoFac:
 var builder = new ContainerBuilder();
+// requires reference
+// but can also work via configuration files and magic strings -> see documentation
 builder.RegisterType<EfRepository>().AsImplementedInterfaces();
 var container = builder.Build();
 var core = new Core(container.Resolve<IRepository>());
