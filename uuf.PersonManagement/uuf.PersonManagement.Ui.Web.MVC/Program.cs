@@ -1,7 +1,12 @@
+using Microsoft.Extensions.DependencyInjection;
+using uuf.PersonManagement.Data.EfCore;
+using uuf.PersonManagement.Model.Contracts;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<IRepository>(new EfRepository());
 
 var app = builder.Build();
 

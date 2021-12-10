@@ -15,7 +15,7 @@ namespace uuf.PersonManagement.Ui.Web.MVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(new int[] { 1,2,3,14,1,345,43,10 });
         }
 
         public IActionResult Privacy()

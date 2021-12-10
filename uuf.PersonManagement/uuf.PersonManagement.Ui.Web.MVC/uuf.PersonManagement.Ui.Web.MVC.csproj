@@ -6,4 +6,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\uuf.PersonManagement.Data.EfCore\uuf.PersonManagement.Data.EfCore.csproj" />
+    <ProjectReference Include="..\uuf.PersonManagement.Logic\uuf.PersonManagement.Logic.csproj" />
+    <ProjectReference Include="..\uuf.PersonManagement.Model\uuf.PersonManagement.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
 </Project>
