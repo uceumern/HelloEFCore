@@ -1,11 +1,15 @@
 using Microsoft.Extensions.DependencyInjection;
+using System.Text.Json.Serialization;
 using uuf.PersonManagement.Data.EfCore;
 using uuf.PersonManagement.Model.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddJsonOptions(o =>
+{
+    o.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+});
 builder.Services.AddSingleton<IRepository>(new EfRepository());
 
 var app = builder.Build();
