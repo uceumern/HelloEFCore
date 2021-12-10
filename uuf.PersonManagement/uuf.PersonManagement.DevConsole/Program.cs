@@ -1,6 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Autofac;
-using System.Reflection;
 using uuf.PersonManagement.Data.EfCore;
 using uuf.PersonManagement.Logic;
 using uuf.PersonManagement.Model;

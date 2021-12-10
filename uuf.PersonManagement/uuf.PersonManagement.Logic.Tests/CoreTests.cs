@@ -18,13 +18,12 @@ namespace uuf.PersonManagement.Logic.Tests
             Assert.Null(result);
         }
 
-       
         [Fact]
         public void GetGetEmployeeWithMostCustomers_2_Employees_results_Fred_Moq()
         {
             var mock = new Mock<IRepository>();
             mock.Setup(x => x.GetAll<Employee>()).Returns(new List<Employee>()
-            { 
+            {
                 new Employee() { Name = "Fred" , Customers = new List<Customer> { new Customer(), new Customer(), new Customer() } },
                 new Employee() { Name = "Barney" , Customers = new List<Customer> { new Customer(), new Customer(), new Customer() } },
             });
